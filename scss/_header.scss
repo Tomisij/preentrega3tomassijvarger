@@ -1,0 +1,47 @@
+header {
+    @include flexbox (row, space-between, center) ;
+    grid-area: header;
+    height: 20vh;
+    padding: 0 50px;
+    background-color: black;
+
+    h1 {
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+        color:  $color-principal;
+        border: 2px solid $color-principal;
+        border-radius: 20px;
+        padding: 10px;
+        
+    }
+    div {
+        img {
+            width: 130px;
+            border: 2px solid $color-principal;
+            border-radius: 45px ;
+            padding: 10px;
+            margin-left: 50px;
+        }
+    }
+    nav {
+        ul {
+            @include flexbox (row, space-between, center) ;
+            li {
+                list-style: none;
+                border: 2px solid $color-principal;
+                border-radius: 7px;
+                margin: 2px;
+                padding: 2px;
+                a {
+                    padding: 0 10px;
+                    text-decoration: none;
+                    list-style: none;
+                    color: $color-principal;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-weight: 00;   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+/* Index */
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        margin-bottom: 50px;
+        background-image: linear-gradient(black, rgb(152, 93, 207));
+        font-size: 16px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: blueviolet;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 250px;
+        margin-top: 35px;
+        padding: 4px 2px;
+    }
+    article {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li  {
+                    text-align: center;
+                    margin-bottom: 55px;
+                    width: 300px;
+                    background-color: rgb(152, 93, 207);
+                    border: 2px solid;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    padding: 25px;
+                    background-image: linear-gradient(black, rgb(152, 93, 207));
+                    &:hover {
+                    box-shadow: 0 0.4rem 0.4rem black;
+                    }
+                img {
+                    width: 250px;
+                }
+                p {
+                    border-bottom: 3px solid black;
+                    padding-bottom: 10px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 18px;
+                }
+                h3 {
+                    color: rgb(79, 60, 95);
+                }
+            }
+            
+        }
+    }
+}
+
+/* Productos */
+
+section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        background-image: linear-gradient(black, rgb(152, 93, 207));
+        font-size: 16px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: blueviolet;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 250px;
+        margin-top: 35px;
+        padding: 4px 2px;
+    }
+    article {
+        ul {
+            li {
+                text-align: center;
+                margin-bottom: 55px;
+                width: 300px;
+                background-color: rgb(152, 93, 207);
+                border: 2px solid;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                padding: 25px;
+                background-image: linear-gradient(black, rgb(152, 93, 207));
+                &:hover {
+                box-shadow: 0 0.4rem 0.4rem black;
+                h3 {
+
+                }
+                p {
+
+                }
+            }
+        }
+    }
+}
+}
+
+
+/* Desktop First */
+
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 600px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            ;
+        grid-row-gap: 10px;
+
+        header {
+            grid-area: header;
+            height: 20vh;
+            background-color: black;
+
+        }
+        main {
+            grid-area: main;
+            height: 60vh;
+        }
+        footer {
+            grid-area: footer;
+            height: 20vh;
+        }
+        
+    }
+
+    .mapa{
+        width: 400px;
+    display: flex;
+    justify-content: center;
+    }
+
+header {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas: 
+        "titulo"
+        "imgmiles"
+        "navegador"
+        ;
+    grid-row-gap: 10px; 
+    margin-bottom: 100px;
+    background-color: black;
+    
+}
+
+.logo {
+    grid-area: titulo;
+    padding-left: 55px;
+    font-size: 2rem;
+    margin-top: 10px;
+    background-color: black;
+}
+.miles {
+    grid-area: imgmiles;
+    margin-left: 170px;
+    background-color: black;
+
+}
+.navegador {
+    grid-area: navegador;
+    margin-bottom: 15px;
+    background-color: black;
+
+}
+
+main {
+    height: 788px;
+}
+
+footer {
+    margin-top: 2250px;
+    height: 100px;
+}
+
+
+}
+
+@media (max-width: 480px) {
+    .body {
+        background-color: black; 
+    }
+}
+@media (max-width: 320px) {
+    .body {
+        background-color: black; 
+    }
+}
+
+
