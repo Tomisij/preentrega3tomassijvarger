@@ -1,7 +1,7 @@
 {
-  "name": "clase_13",
+  "name": "Coder Entrega Proyeco Final",
   "version": "1.0.0",
-  "description": "preentrega3",
+  "description": "proyectofinal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
