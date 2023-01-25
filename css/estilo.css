@@ -9,9 +9,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 3fr 0.5fr;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-row-gap: 10px;
   background-image: url(../img/jazzwallpaper.jpg);
   background-size: 500px;
@@ -243,9 +241,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 3fr 0.5fr;
-    grid-template-areas: "header"
- "main"
- "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-row-gap: 10px; }
     .grilla header {
       grid-area: header;
@@ -263,9 +259,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 3fr 0.5fr;
-    grid-template-areas: "titulo"
- "imgmiles"
- "navegador";
+    grid-template-areas: "titulo" "imgmiles" "navegador";
     grid-row-gap: 10px;
     margin-bottom: 100px;
     background-color: #050505; }
@@ -301,9 +295,3 @@ footer {
 @media (max-width: 320px) {
   .body {
     background-color: black; } }
-
-/* Quienes Somos */
-@media (max-width: 600px) {
-  .jamesimg {
-    width: 200px;
-    background-color: #830a0a; } }
